@@ -120,16 +120,11 @@
 
     <div class="reveal">
       <h2 class="h3" style="margin-bottom:20px;">Project inquiry form</h2>
-      <p style="font-size:12.5px;color:var(--cream-faint);margin-bottom:20px;">This form is not yet connected to a backend — for now, please reach out directly via WhatsApp or phone above. The form below is being prepared for a future update.</p>
-      <!--
-        FORM ACTIVATION NOTE (for future connection):
-        Field `name` attributes below are already set up to work as-is with a form
-        backend service (e.g. Formspree, Web3Forms, or similar) once one is chosen.
-        To activate: change the <form> tag's action/onsubmit to point to the chosen
-        service's endpoint, remove the placeholder onsubmit alert below, and this
-        form will submit correctly without restructuring any fields.
-      -->
-      <form style="display:flex;flex-direction:column;gap:16px;" onsubmit="event.preventDefault(); alert('This form is not yet active — please contact us via WhatsApp or phone for now.');">
+      <form id="inquiry-form" style="display:flex;flex-direction:column;gap:16px;">
+        <input type="hidden" name="access_key" value="37c6ed77-d217-41e6-82fb-58108ca21efe">
+        <input type="hidden" name="subject" value="New Project Enquiry – NCBiz Consults">
+        <input type="hidden" name="from_name" value="NCBiz Consults Website">
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
         <div>
           <label for="f-name" style="display:block;font-size:12.5px;color:var(--cream-dim);margin-bottom:6px;">Name</label>
           <input id="f-name" type="text" name="name" required style="width:100%;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:12px 14px;color:var(--cream);font-family:inherit;font-size:14px;">
@@ -176,7 +171,8 @@
             <option>Email</option>
           </select>
         </div>
-        <button type="submit" class="btn-primary" style="justify-content:center;margin-top:8px;">Send Inquiry</button>
+        <button type="submit" id="inquiry-submit" class="btn-primary" style="justify-content:center;margin-top:8px;">Send Inquiry</button>
+        <p id="inquiry-status" role="status" aria-live="polite" style="font-size:13px;margin-top:4px;display:none;"></p>
       </form>
     </div>
 
@@ -236,5 +232,6 @@
 </a>
 
 <script src="js/script.js" defer></script>
+<script src="js/contact-form.js" defer></script>
 </body>
 </html>
