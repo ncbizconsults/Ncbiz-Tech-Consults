@@ -3,4 +3,4 @@ Allow: /
 
 Disallow: /404.html
 
-Sitemap: https://ncbizconsults.com/sitemap.xml
+Sitemap: https://www.ncbizconsults.com/sitemap.xml
