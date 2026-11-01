@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ServeLane | Restaurant Operations Platform | NCBiz Digital Consults</title>
-<meta name="description" content="ServeLane is NCBiz Digital Consults' restaurant operations platform — centralizing orders, staff roles and day-to-day activity in one place. Currently being finalized for launch.">
+<title>ServeLane Restaurant Management Software | NCBiz Digital Consults</title>
+<meta name="description" content="Explore ServeLane, restaurant management software for orders, menus, staff, reporting and online ordering. Developed by NCBiz Digital Consults in Uganda.">
 <link rel="canonical" href="https://www.ncbizconsults.com/products/servelane">
 <link rel="icon" type="image/x-icon" href="../favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
@@ -15,12 +15,13 @@
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="NCBiz Digital Consults">
-<meta property="og:title" content="ServeLane | Restaurant Operations Platform">
-<meta property="og:description" content="ServeLane is NCBiz Digital Consults' restaurant operations platform — centralizing orders, staff roles and day-to-day activity in one place. Currently being finalized for launch.">
+<meta property="og:title" content="ServeLane Restaurant Management Software | NCBiz Digital Consults">
+<meta property="og:description" content="Explore ServeLane, restaurant management software for orders, menus, staff, reporting and online ordering. Developed by NCBiz Digital Consults in Uganda.">
 <meta property="og:url" content="https://www.ncbizconsults.com/products/servelane">
-<meta property="og:image" content="https://www.ncbizconsults.com/images/products/servelane-homepage.webp">
-<meta property="og:image:width" content="1045">
-<meta property="og:image:height" content="675">
+<meta property="og:image" content="https://www.ncbizconsults.com/images/products/servelane-desktop-dashboard.webp">
+<meta property="og:image:width" content="1363">
+<meta property="og:image:height" content="768">
+<meta property="og:image:alt" content="ServeLane restaurant dashboard showing workspace overview, package information and restaurant status">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,13 +36,24 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Service",
-  "serviceType": "Restaurant Operations Platform",
+  "@type": "SoftwareApplication",
   "name": "ServeLane",
-  "description": "ServeLane is a restaurant operations platform by NCBiz Digital Consults, centralizing incoming orders, staff roles and permissions, customer records and operational reporting in one workspace. Currently being finalized for launch.",
-  "provider": { "@type": "Organization", "name": "NCBiz Digital Consults", "legalName": "NCBIZ Digital Consults Ltd", "url": "https://www.ncbizconsults.com/" },
-  "areaServed": { "@type": "Country", "name": "Uganda" },
-  "url": "https://www.ncbizconsults.com/products/servelane"
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "description": "ServeLane is restaurant management software for orders, menus, staff, reporting and online ordering, developed by NCBiz Digital Consults in Uganda.",
+  "url": "https://www.ncbizconsults.com/products/servelane",
+  "image": "https://www.ncbizconsults.com/images/products/servelane-desktop-dashboard.webp",
+  "author": {
+    "@type": "Organization",
+    "name": "NCBiz Digital Consults",
+    "legalName": "NCBIZ Digital Consults Ltd",
+    "url": "https://www.ncbizconsults.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "NCBiz Digital Consults",
+    "url": "https://www.ncbizconsults.com/"
+  }
 }
 </script>
 <script type="application/ld+json">
@@ -121,98 +133,291 @@
   <a href="../contact" class="mobile-menu-cta">Start Your Project</a>
 </nav>
 
-<section class="hero" style="min-height:auto;padding:130px 0 50px;">
+<!-- ============ 1. HERO ============ -->
+<section class="hero" style="min-height:auto;padding:130px 0 56px;">
   <div class="hero-grid" aria-hidden="true"></div>
   <div class="wrap hero-content" style="max-width:760px;">
-    <div class="eyebrow">Products → ServeLane</div>
-    <span class="status-badge">Currently being finalized for launch</span>
-    <h1 class="h1" style="font-size:clamp(28px,6vw,44px);">Know your orders. Grow your business.</h1>
-    <p class="lede" style="font-size:16px;">ServeLane is a restaurant operations platform by NCBiz Digital Consults — one secure workspace giving a restaurant clearer visibility over orders, staff and day-to-day activity, instead of relying entirely on informal conversations.</p>
+    <div class="eyebrow">Restaurant Management Software</div>
+    <h1 class="h1" style="font-size:clamp(28px,6vw,44px);">Know Your Orders. Grow Your Business.</h1>
+    <p class="lede" style="font-size:16px;">ServeLane helps restaurants manage orders, menus, staff and day-to-day operations from one connected workspace. From receiving customer orders to coordinating restaurant activities, it gives your team a clearer view of what is happening across the business.</p>
     <div class="final-cta-btns" style="margin-top:24px;justify-content:flex-start;">
-      <a href="../contact?service=servelane" class="btn-primary">Ask About Early Access →</a>
+      <a href="https://servelane.lovable.app" class="btn-primary" target="_blank" rel="noopener noreferrer">Start Testing ServeLane →</a>
+      <a href="../contact?service=servelane" class="btn-secondary">Talk to NCBiz</a>
+    </div>
+    <ul class="sl-chips" aria-label="What ServeLane covers">
+      <li>Orders</li><li>Menu</li><li>Kitchen</li><li>Team &amp; roles</li><li>Customers</li><li>Reports</li><li>Online ordering</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 2. THE OPERATIONAL CHALLENGE ============ -->
+<section class="section" id="challenge">
+  <div class="wrap sl-narrow">
+    <div class="section-head reveal">
+      <div class="eyebrow">The Operational Challenge</div>
+      <h2 class="h2">Bring More Visibility to Your Restaurant Operations</h2>
+    </div>
+    <div class="sl-prose reveal">
+      <p>When orders, menus, staff communication, customer records and reporting are handled through separate, disconnected processes, it becomes harder to see what is happening across a restaurant. An order may be taken in one place, updated in another and only partly recorded afterwards. Menu changes may not reach everyone who needs them. Reporting then depends on piecing information together after the fact.</p>
+      <p>ServeLane brings these activities into a more organised workspace, so that orders, menu details, team access, customer records and reports sit together and can be reviewed in one place.</p>
+      <p>ServeLane does not automatically prevent theft, fraud or misconduct. What it offers is clearer records, better visibility, stronger accountability and easier coordination between the people running the restaurant.</p>
     </div>
   </div>
 </section>
 
-<section class="section wrap" style="max-width:760px;">
-  <div class="reveal" style="background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-lg);padding:24px 26px;">
-    <p style="color:var(--cream-dim);font-size:14px;line-height:1.75;">ServeLane is a real, working product being built by NCBiz Digital Consults — not a concept. It doesn't yet have a public sign-up link while we finish building out the operational features below. The screenshots on this page are real interface evidence from the product as it exists today.</p>
-  </div>
-</section>
-
-<!-- ============ WHAT SERVELANE IS FOR ============ -->
-<section class="section wrap" style="max-width:760px;">
-  <div class="section-head reveal">
-    <div class="eyebrow">What ServeLane Is For</div>
-    <h2 class="h2">Operational visibility, in one place.</h2>
-    <p class="lede" style="margin-top:14px;">ServeLane is designed to give restaurants centralized visibility across:</p>
-  </div>
-  <div class="reveal" style="display:flex;flex-direction:column;gap:12px;color:var(--cream-dim);font-size:14.5px;line-height:1.7;">
-    <p>• Incoming orders, including those from website/QR channels</p>
-    <p>• Order status and tracking</p>
-    <p>• Staff roles and permissions — Owner, Manager, Supervisor, Cashier, Kitchen, Chef</p>
-    <p>• Staff activity and accountability</p>
-    <p>• Customer records</p>
-    <p>• Customer engagement and campaign workflows</p>
-    <p>• Notifications</p>
-    <p>• Operational reporting and analytics</p>
-    <p>• WhatsApp-related customer and order workflows</p>
-  </div>
-  <p style="color:var(--cream-dim);font-size:14px;line-height:1.75;margin-top:20px;" class="reveal">Restaurants that run mostly on informal conversation and memory often lose track of what actually happened with an order, or who did what. ServeLane doesn't automatically prevent theft, fraud or staff misconduct — no software can promise that — but it gives you clearer records and stronger operational visibility to work from than relying entirely on word of mouth.</p>
-</section>
-
-<!-- ============ INTERFACE EVIDENCE ============ -->
-<section class="section section--light">
+<!-- ============ 3. EXPLORE THE PLATFORM ============ -->
+<section class="section section--panel" id="platform">
   <div class="wrap">
-  <div class="section-head reveal">
-    <div class="eyebrow">Product Preview</div>
-    <h2 class="h2">The real interface, as it exists today.</h2>
-  </div>
-  <div class="evidence-gallery cols-3 reveal">
-    <div class="evidence-card">
-      <img src="../images/products/servelane-homepage.webp" width="1045" height="675" alt="ServeLane homepage introducing the restaurant operations workspace, with Create account and Staff access options" loading="lazy">
-      <div class="evidence-caption"><strong>Homepage</strong> — "Know Your Orders. Grow Your Business." with separate paths for restaurant owners and staff.</div>
+    <div class="section-head reveal">
+      <div class="eyebrow">Explore the Platform</div>
+      <h2 class="h2">One Workspace. Multiple Restaurant Operations.</h2>
+      <p class="sl-note" style="margin-top:14px;">The screenshots on this page come from a demonstration restaurant workspace (Kampala Pilau House) and show sample data. Select any screenshot to view it full size.</p>
     </div>
-    <div class="evidence-card">
-      <img src="../images/products/servelane-owner-login.webp" width="1319" height="601" alt="ServeLane owner sign-in screen with email and password fields" loading="lazy">
-      <div class="evidence-caption"><strong>Owner sign-in</strong> — restaurant owners and managers sign in with their email.</div>
+    <div class="sl-feature reveal">
+      <div class="sl-feature-head">
+        <h3>Dashboard overview</h3>
+        <p>The dashboard gives restaurant users an overview of their workspace and operational information as soon as they sign in.</p>
+        <ul class="sl-points"><li>Package information and the number of team accounts in use</li><li>Restaurant status, including ordering, menu and table setup</li><li>Setup progress for getting the workspace ready</li></ul>
+      </div>
+      <figure class="sl-shot">
+        <a href="../images/products/servelane-desktop-dashboard.webp" target="_blank" rel="noopener" aria-label="Open the full-size screenshot: Desktop dashboard.">
+          <img src="../images/products/servelane-desktop-dashboard.webp" width="1363" height="768" alt="ServeLane desktop dashboard for Kampala Pilau House showing package information, team members, restaurant status and setup progress, with navigation for Orders, Kitchen, Menu, Team, Reports, Customers, Campaigns and Online Ordering Link" loading="lazy" decoding="async">
+        </a>
+        <figcaption><strong>Desktop dashboard.</strong> Workspace overview, package information, restaurant status and setup progress.</figcaption>
+      </figure>
     </div>
-    <div class="evidence-card">
-      <img src="../images/products/servelane-staff-login.webp" width="1115" height="742" alt="ServeLane staff access sign-in screen using workplace name and username, no email required" loading="lazy">
-      <div class="evidence-caption"><strong>Staff access</strong> — staff sign in with the workplace name and a username, no personal email needed.</div>
+
+    <div class="sl-feature reveal">
+      <div class="sl-feature-head">
+        <h3>Order management</h3>
+        <p>Orders are recorded and managed in one list, so staff can see what has come in and how far each order has progressed.</p>
+        <ul class="sl-points"><li>Each order shows its number, source, order type, items, time and total</li><li>Status labels such as New, Confirmed, Preparing and Ready show progress at a glance</li><li>Filters for open orders, order source and date, and a New order button for manual entry</li></ul>
+      </div>
+      <figure class="sl-shot">
+        <a href="../images/products/servelane-desktop-orders.webp" target="_blank" rel="noopener" aria-label="Open the full-size screenshot: Desktop orders.">
+          <img src="../images/products/servelane-desktop-orders.webp" width="1366" height="763" alt="ServeLane desktop Orders screen listing four orders with their source, order type, items, time, total and status labels New, Preparing, Confirmed and Ready" loading="lazy" decoding="async">
+        </a>
+        <figcaption><strong>Desktop orders.</strong> Order list with sources, types, items, totals and status labels.</figcaption>
+      </figure>
     </div>
-  </div>
-  <div class="evidence-gallery reveal" style="margin-top:8px;">
-    <div class="evidence-card evidence-card--wide">
-      <img src="../images/products/servelane-dashboard.webp" width="1329" height="545" alt="ServeLane dashboard showing workspace name, owner role, location, subscription status and a coming-soon notice for orders, menu, team and reports" loading="lazy">
-      <div class="evidence-caption"><strong>Dashboard</strong> — confirms workspace, role and access. Orders, menu, team management and reporting are arriving in the next phase of development.</div>
+
+    <div class="sl-feature reveal">
+      <div class="sl-feature-head">
+        <h3>Reports</h3>
+        <p>Reporting helps restaurant users review the operational information recorded in ServeLane over a chosen period.</p>
+        <ul class="sl-points"><li>A date range selector and report sections for overview, sales, orders and menu, busy hours and sources, customers, staff activity and insights</li><li>Summary figures and a trend chart for the selected period</li><li>A Print / PDF option</li></ul>
+      </div>
+      <figure class="sl-shot">
+        <a href="../images/products/servelane-desktop-reports.webp" target="_blank" rel="noopener" aria-label="Open the full-size screenshot: Desktop reports.">
+          <img src="../images/products/servelane-desktop-reports.webp" width="1348" height="768" alt="ServeLane desktop Reports screen with a date range selector, report tabs, summary cards and a sales trend chart for the last 30 days" loading="lazy" decoding="async">
+        </a>
+        <figcaption><strong>Desktop reports.</strong> Report tabs, summary cards and a trend chart for a selected period (sample data).</figcaption>
+      </figure>
     </div>
-  </div>
-  <div class="evidence-video-wrap reveal wide" style="margin-top:24px;">
-    <video controls preload="none" poster="../images/products/servelane-walkthrough-poster.jpg" aria-label="ServeLane restaurant operations platform walkthrough video">
-      <source src="../videos/servelane-walkthrough.mp4" type="video/mp4">
-      Your browser doesn't support embedded video. <a href="../videos/servelane-walkthrough.mp4">Download the video</a> instead.
-    </video>
-  </div>
-  <p class="evidence-video-caption reveal" style="text-align:center;">ServeLane walkthrough</p>
+
+    <div class="sl-feature reveal">
+      <div class="sl-feature-head">
+        <h3>Menu management</h3>
+        <p>The menu is managed by the restaurant team, from categories and items through to prices and availability.</p>
+        <ul class="sl-points"><li>Menu categories with their items, prices and add-ons</li><li>Availability switches, including a Sold out label</li><li>Specials and featured items shown to customers on the QR menu and website</li><li>Add Category and Add Menu item actions</li></ul>
+      </div>
+      <figure class="sl-shot">
+        <a href="../images/products/servelane-desktop-menu.webp" target="_blank" rel="noopener" aria-label="Open the full-size screenshot: Desktop menu management.">
+          <img src="../images/products/servelane-desktop-menu.webp" width="1348" height="757" alt="ServeLane desktop Menu screen showing Specials and featured items, the Main Dishes category, menu item prices, add-ons and availability switches" loading="lazy" decoding="async">
+        </a>
+        <figcaption><strong>Desktop menu management.</strong> Categories, items, prices, add-ons and availability.</figcaption>
+      </figure>
+    </div>
+
+    <div class="sl-split reveal" style="margin-top:56px;">
+      <div class="sl-panel">
+        <h3>Also in the workspace</h3>
+        <ul>
+          <li>Team accounts, roles and permissions</li>
+          <li>Customer records</li>
+          <li>Customer-facing online ordering links</li>
+          <li>Campaign preparation and scheduling workflows</li>
+          <li>Restaurant profile and workspace management</li>
+          <li>Subscription and package usage information</li>
+        </ul>
+      </div>
+      <div class="sl-panel sl-panel--accent">
+        <h3>Still in development</h3>
+        <p class="sl-note" style="margin-top:0;color:var(--cream-dim);">WhatsApp API integration, payment gateway integration and automated subscription payments are not yet active. Campaign drafts and scheduling workflows are available, but WhatsApp campaign sending is not active. The existing product can be tested now.</p>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- ============ RELATIONSHIP TO LAUNCH KIT ============ -->
-<section class="section wrap" style="max-width:760px;">
-  <div class="section-head reveal">
-    <div class="eyebrow">How It Fits With the Launch Kit</div>
-    <h2 class="h2">Two products, two different jobs.</h2>
+<!-- ============ 4. ORDER MANAGEMENT AND KITCHEN COORDINATION ============ -->
+<section class="section" id="orders">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Order Management &amp; Kitchen Coordination</div>
+      <h2 class="h2">Keep Orders Moving Through Your Restaurant</h2>
+    </div>
+    <div class="sl-prose sl-narrow reveal" style="margin-bottom:32px;">
+      <p>Staff can enter orders manually, open an order to see its details and follow its status as it moves through the restaurant. The workspace also includes a Kitchen area alongside Orders, Menu and Team, so the people preparing food and the people taking orders work from the same set of records.</p>
+      <p>Opening an order shows its source and type, the customer’s details, how payment is being handled, the items and total, and a history of what has happened to it.</p>
+    </div>
+    <div class="sl-stack reveal">
+      <figure class="sl-shot">
+        <a href="../images/products/servelane-desktop-orders.webp" target="_blank" rel="noopener" aria-label="Open the full-size screenshot: Order list.">
+          <img src="../images/products/servelane-desktop-orders.webp" width="1366" height="763" alt="ServeLane desktop Orders screen listing four orders with their source, order type, items, time, total and status labels New, Preparing, Confirmed and Ready" loading="lazy" decoding="async">
+        </a>
+        <figcaption><strong>Order list.</strong> Every order in one list with its status.</figcaption>
+      </figure>
+      <figure class="sl-shot">
+        <a href="../images/products/servelane-desktop-order-details.webp" target="_blank" rel="noopener" aria-label="Open the full-size screenshot: Order details and confirmation.">
+          <img src="../images/products/servelane-desktop-order-details.webp" width="1364" height="768" alt="ServeLane desktop order details panel for an online ordering link pickup order, showing customer details, payment status, items, total, order history and Confirm and Cancel buttons over the Orders list" loading="lazy" decoding="async">
+        </a>
+        <figcaption><strong>Order details and confirmation.</strong> An opened order showing its details, payment status, history and the Confirm action.</figcaption>
+      </figure>
+    </div>
   </div>
-  <p style="color:var(--cream-dim);font-size:14.5px;line-height:1.8;" class="reveal">The <a href="restaurant-digital-launch-kit" style="color:var(--gold);">Restaurant Digital Launch Kit</a> is the customer-facing side — the website and ordering experience your customers use directly. ServeLane is the operational side — how the restaurant itself manages what's coming in. The Launch Kit is not dependent on ServeLane; it runs perfectly well on WhatsApp Business alone. ServeLane is an additional operational option for restaurants that want more centralized visibility.</p>
 </section>
 
-<section class="final-cta wrap">
-  <h2 class="h2 reveal">Interested in early access?</h2>
-  <p class="lede reveal">ServeLane is currently being finalized for launch. Get in touch and we'll let you know when it's ready for your restaurant.</p>
-  <div class="final-cta-btns reveal">
-    <a href="../contact?service=servelane" class="btn-primary">Ask About Early Access →</a>
-    <a href="restaurant-digital-launch-kit" class="btn-secondary">See the Launch Kit</a>
+<!-- ============ 5. CUSTOMER-FACING ONLINE ORDERING ============ -->
+<section class="section section--panel" id="online-ordering">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Customer-Facing Online Ordering</div>
+      <h2 class="h2">Give Customers a Direct Way to Place Orders</h2>
+    </div>
+    <div class="sl-prose sl-narrow reveal" style="margin-bottom:32px;">
+      <p>Restaurants can share their online ordering link with customers through their digital channels. Customers can view the restaurant’s online menu and submit orders, and restaurant staff manage the incoming orders inside ServeLane.</p>
+      <p>The screen below is what customers see. It is separate from the restaurant’s internal management workspace shown elsewhere on this page.</p>
+    </div>
+    <div class="reveal">
+      <!-- PHONE ONLINE ORDERING SCREENSHOT (Screenshot 09) was not supplied. When it arrives, add it here as a second figure labelled "Phone". -->
+      <figure class="sl-shot">
+        <a href="../images/products/servelane-desktop-online-ordering.webp" target="_blank" rel="noopener" aria-label="Open the full-size screenshot: Customer online ordering, desktop view.">
+          <img src="../images/products/servelane-desktop-online-ordering.webp" width="1351" height="768" alt="Customer-facing ServeLane online ordering page for Kampala Pilau House on desktop, showing today’s specials, the Main Dishes menu with prices and Add buttons" loading="lazy" decoding="async">
+        </a>
+        <figcaption><strong>Customer online ordering, desktop view.</strong> The public menu a customer sees, with specials, items, prices and Add buttons.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. MOBILE EXPERIENCE ============ -->
+<section class="section" id="mobile">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Mobile Experience</div>
+      <h2 class="h2">Restaurant Operations Within Reach</h2>
+    </div>
+    <div class="sl-prose sl-narrow reveal" style="margin-bottom:32px;">
+      <p>Restaurant users can access the platform through supported mobile screens. The dashboard adapts to a phone, and the navigation opens as a menu with the same sections: Dashboard, Orders, Kitchen, Menu, Team, Reports, Customers, Campaigns, Online Ordering Link and Subscription.</p>
+    </div>
+    <div class="sl-phones reveal">
+      <figure class="sl-shot sl-shot--phone">
+        <a href="../images/products/servelane-phone-dashboard.webp" target="_blank" rel="noopener" aria-label="Open the full-size screenshot: Phone dashboard.">
+          <img src="../images/products/servelane-phone-dashboard.webp" width="689" height="1280" alt="ServeLane phone dashboard showing a welcome message, a package trial badge and workspace summary cards" loading="lazy" decoding="async">
+        </a>
+        <figcaption><strong>Phone dashboard.</strong> The workspace overview on a phone.</figcaption>
+      </figure>
+      <figure class="sl-shot sl-shot--phone">
+        <a href="../images/products/servelane-phone-navigation.webp" target="_blank" rel="noopener" aria-label="Open the full-size screenshot: Phone navigation.">
+          <img src="../images/products/servelane-phone-navigation.webp" width="692" height="1280" alt="ServeLane phone navigation menu opened, listing Dashboard, Orders, Kitchen, Menu, Team, Reports, Customers, Campaigns, Online Ordering Link and Subscription" loading="lazy" decoding="async">
+        </a>
+        <figcaption><strong>Phone navigation.</strong> The menu opened, with the same sections as the desktop workspace.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. WHO SERVELANE IS FOR ============ -->
+<section class="section section--panel" id="who-for">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Who ServeLane Is For</div>
+      <h2 class="h2">Designed for Different Food-Service Businesses</h2>
+    </div>
+    <div class="why-grid reveal">
+      <div class="why-item"><span class="why-mark">→</span><div><h3>Restaurants</h3><p>Coordinate orders, menus and team activity from one workspace.</p></div></div>
+      <div class="why-item"><span class="why-mark">→</span><div><h3>Cafés</h3><p>Keep a clear record of orders and menu availability through the day.</p></div></div>
+      <div class="why-item"><span class="why-mark">→</span><div><h3>Takeaway businesses</h3><p>Record pickup and takeaway orders and follow them through to ready.</p></div></div>
+      <div class="why-item"><span class="why-mark">→</span><div><h3>Fast-food businesses</h3><p>Manage a steady flow of orders with clear statuses.</p></div></div>
+      <div class="why-item"><span class="why-mark">→</span><div><h3>Quick-service restaurants</h3><p>Give counter and kitchen staff a shared view of current orders.</p></div></div>
+      <div class="why-item"><span class="why-mark">→</span><div><h3>Casual dining businesses</h3><p>Handle dine-in and online orders alongside menu and customer records.</p></div></div>
+    </div>
+    <div class="sl-prose sl-narrow reveal" style="margin-top:32px;">
+      <p>Authorised team members can access the workspace according to their assigned responsibilities. Supported team roles include:</p>
+      <div class="sl-roles"><span>Owner</span><span>Manager</span><span>Supervisor</span><span>Cashier</span><span>Kitchen</span><span>Chef</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8. VIDEO DEMONSTRATION ============ -->
+<section class="section" id="video">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Video Demonstration</div>
+      <h2 class="h2">See ServeLane in Action</h2>
+      <p class="lede" style="margin-top:14px;">Take a closer look at ServeLane and see how its restaurant operations tools work together, from the restaurant workspace to everyday order management.</p>
+    </div>
+    <figure class="sl-video reveal">
+      <video controls preload="metadata" playsinline width="1280" height="722" title="ServeLane product walkthrough" aria-label="ServeLane product walkthrough video">
+        <source src="../videos/servelane-product-walkthrough.mp4" type="video/mp4">
+        Your browser doesn’t support embedded video. <a class="sl-link" href="../videos/servelane-product-walkthrough.mp4">Download the ServeLane walkthrough video</a> instead.
+      </video>
+      <figcaption>ServeLane product walkthrough (about 4 minutes, no narration).</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ 9. GETTING STARTED ============ -->
+<section class="section section--panel" id="getting-started">
+  <div class="wrap sl-narrow">
+    <div class="section-head reveal">
+      <div class="eyebrow">Getting Started</div>
+      <h2 class="h2">Getting Started with ServeLane</h2>
+    </div>
+    <ol class="sl-steps reveal">
+      <li><span><strong>Open the ServeLane application.</strong> Go to <a class="sl-link" href="https://servelane.lovable.app" target="_blank" rel="noopener noreferrer">servelane.lovable.app</a>.</span></li>
+      <li><span><strong>Create an account.</strong> Register as the restaurant owner.</span></li>
+      <li><span><strong>Set up the restaurant profile.</strong> Add your restaurant’s details to the workspace.</span></li>
+      <li><span><strong>Configure the menu.</strong> Add menu categories, items, prices and availability.</span></li>
+      <li><span><strong>Set up your team.</strong> Add authorised team members and assign their roles.</span></li>
+      <li><span><strong>Start taking orders.</strong> Begin managing manual orders, share the customer-facing online ordering link, or do both.</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ 10. RESTAURANT DIGITAL LAUNCH KIT RELATIONSHIP ============ -->
+<section class="section" id="launch-kit">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">How It Fits With the Launch Kit</div>
+      <h2 class="h2">Your Restaurant’s Digital Presence and Operations</h2>
+    </div>
+    <div class="sl-split reveal">
+      <div class="sl-panel">
+        <h3>Restaurant Digital Launch Kit</h3>
+        <p class="sl-note" style="margin-top:0;color:var(--cream-dim);">Focuses on the customer-facing digital experience. It can help a restaurant establish a website or digital menu, provide QR-based access and support customer ordering through available channels, including WhatsApp Business handoff.</p>
+      </div>
+      <div class="sl-panel sl-panel--accent">
+        <h3>ServeLane</h3>
+        <p class="sl-note" style="margin-top:0;color:var(--cream-dim);">Focuses on the restaurant’s internal operational workspace, including order management, menus, staff, kitchen workflows, customer records and reporting.</p>
+      </div>
+    </div>
+    <div class="sl-prose sl-narrow reveal" style="margin-top:28px;">
+      <p>The two solutions can complement one another, but the Restaurant Digital Launch Kit can operate independently. It does not depend on ServeLane.</p>
+      <p><a class="sl-link" href="restaurant-digital-launch-kit">Learn about the Restaurant Digital Launch Kit →</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11. FINAL CALL TO ACTION ============ -->
+<section class="final-cta">
+  <div class="wrap">
+    <h2 class="h2 reveal">Ready to Explore ServeLane?</h2>
+    <p class="lede reveal">ServeLane is open for testing. Explore the platform, set up your restaurant workspace and see how its available tools can support your day-to-day restaurant operations.</p>
+    <div class="final-cta-btns reveal">
+      <a href="https://servelane.lovable.app" class="btn-primary" target="_blank" rel="noopener noreferrer">Start Testing ServeLane →</a>
+      <a href="../contact?service=servelane" class="btn-secondary">Contact NCBiz Digital Consults</a>
+    </div>
   </div>
 </section>
 
